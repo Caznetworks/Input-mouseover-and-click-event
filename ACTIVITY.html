@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+       *{
+      margin: 10px;
+      padding: 5px;
+    }
+    .container{
+      border: 1px black solid;
+      width: 110px;
+      padding: 20px;
+      margin: 20px;
+    }
+    .con{
+      border: 1px black solid;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      width: 350px;
+    }
+    .col{
+      border: 1px solid;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      /* margin-left: 20px;
+      margin-right: 20px; */
+      }
+    #progress {
+      width: 900px;
+      height: 50px;
+      border: 1px solid #ccc;
+      }
+
+    #bar {
+      position: relative;
+      right: 15px;
+      bottom: 15px;
+      width: 0%;
+      height: 100%;
+      background-color: #006eff;
+      transition: width 0.5s;
+      }
+  </style>
+</head>
+<body>
+  <div class="mouse-over-event">
+    <h1>Mouse Over Event!</h1>
+    <div class="con" id="circle">
+      <div class="content">
+        <div class="col" id="one"></div>
+        <div class="col" id="two"></div>
+        <div class="col" id="three"></div>
+      </div>
+      <div class="content">
+        <div class="col" id="four"></div>
+        <div class="col" id="five"></div>
+        <div class="col" id="six"></div>
+      </div>
+      <div class="content">
+        <div class="col" id="seven"></div>
+        <div class="col" id="eight"></div>
+        <div class="col" id="nine"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="Input-event">
+    <h1>Input Event!</h1>
+    <div id="progress">
+      <div id="bar"></div>
+  </div>
+    <input type="text" id="input" placeholder="Enter a Number">
+  </div>
+
+  <div class="click">
+    <h1>click Event!</h1>
+    <div class="container" id="color">
+      <h1 id="color" style="align-items: center;"></h1>
+    </div>
+    <div class="Color-Buttons">
+      <button id="yellow">yellow</button>
+      <button id="green">green</button>
+      <button id="blue">blue</button>
+      <button id="orange">orange</button>
+      <!-- <button id="yellow" data-color="yellow">Yellow</button>
+      <button id="green" data-color="green">Green</button>
+      <button id="blue" data-color="blue">Blue</button>
+      <button id="orange" data-color="orange">Orange</button> -->
+    </div>
+
+    <script src="ACTIVITY.js"></script> 
+</body>
+</html>
